@@ -1,0 +1,80 @@
+{
+    "InstanceTypes": [
+        {
+            "InstanceType": "m1.small",
+            "CurrentGeneration": false,
+            "FreeTierEligible": false,
+            "SupportedUsageClasses": [
+                "on-demand",
+                "spot"
+            ],
+            "SupportedRootDeviceTypes": [
+                "ebs",
+                "instance-store"
+            ],
+            "SupportedVirtualizationTypes": [
+                "paravirtual",
+                "hvm"
+            ],
+            "BareMetal": false,
+            "Hypervisor": "xen",
+            "ProcessorInfo": {
+                "SupportedArchitectures": [
+                    "i386",
+                    "x86_64"
+                ]
+            },
+            "VCpuInfo": {
+                "DefaultVCpus": 1
+            },
+            "MemoryInfo": {
+                "SizeInMiB": 1740
+            },
+            "InstanceStorageSupported": true,
+            "InstanceStorageInfo": {
+                "TotalSizeInGB": 160,
+                "Disks": [
+                    {
+                        "SizeInGB": 160,
+                        "Count": 1,
+                        "Type": "hdd"
+                    }
+                ],
+                "NvmeSupport": "unsupported"
+            },
+            "EbsInfo": {
+                "EbsOptimizedSupport": "unsupported",
+                "EncryptionSupport": "unsupported",
+                "NvmeSupport": "unsupported"
+            },
+            "NetworkInfo": {
+                "NetworkPerformance": "Low",
+                "MaximumNetworkInterfaces": 2,
+                "MaximumNetworkCards": 1,
+                "DefaultNetworkCardIndex": 0,
+                "NetworkCards": [
+                    {
+                        "NetworkCardIndex": 0,
+                        "NetworkPerformance": "Low",
+                        "MaximumNetworkInterfaces": 2
+                    }
+                ],
+                "Ipv4AddressesPerInterface": 4,
+                "Ipv6AddressesPerInterface": 0,
+                "Ipv6Supported": false,
+                "EnaSupport": "unsupported",
+                "EfaSupported": false
+            },
+            "PlacementGroupInfo": {
+                "SupportedStrategies": [
+                    "partition",
+                    "spread"
+                ]
+            },
+            "HibernationSupported": false,
+            "BurstablePerformanceSupported": false,
+            "DedicatedHostsSupported": false,
+            "AutoRecoverySupported": false
+        }
+    ]
+}

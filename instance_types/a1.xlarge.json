@@ -1,0 +1,76 @@
+{
+    "InstanceTypes": [
+        {
+            "InstanceType": "a1.xlarge",
+            "CurrentGeneration": false,
+            "FreeTierEligible": false,
+            "SupportedUsageClasses": [
+                "on-demand",
+                "spot"
+            ],
+            "SupportedRootDeviceTypes": [
+                "ebs"
+            ],
+            "SupportedVirtualizationTypes": [
+                "hvm"
+            ],
+            "BareMetal": false,
+            "Hypervisor": "nitro",
+            "ProcessorInfo": {
+                "SupportedArchitectures": [
+                    "arm64"
+                ],
+                "SustainedClockSpeedInGhz": 2.3
+            },
+            "VCpuInfo": {
+                "DefaultVCpus": 4
+            },
+            "MemoryInfo": {
+                "SizeInMiB": 8192
+            },
+            "InstanceStorageSupported": false,
+            "EbsInfo": {
+                "EbsOptimizedSupport": "default",
+                "EncryptionSupport": "supported",
+                "EbsOptimizedInfo": {
+                    "BaselineBandwidthInMbps": 800,
+                    "BaselineThroughputInMBps": 100.0,
+                    "BaselineIops": 6000,
+                    "MaximumBandwidthInMbps": 3500,
+                    "MaximumThroughputInMBps": 437.5,
+                    "MaximumIops": 20000
+                },
+                "NvmeSupport": "required"
+            },
+            "NetworkInfo": {
+                "NetworkPerformance": "Up to 10 Gigabit",
+                "MaximumNetworkInterfaces": 4,
+                "MaximumNetworkCards": 1,
+                "DefaultNetworkCardIndex": 0,
+                "NetworkCards": [
+                    {
+                        "NetworkCardIndex": 0,
+                        "NetworkPerformance": "Up to 10 Gigabit",
+                        "MaximumNetworkInterfaces": 4
+                    }
+                ],
+                "Ipv4AddressesPerInterface": 15,
+                "Ipv6AddressesPerInterface": 15,
+                "Ipv6Supported": true,
+                "EnaSupport": "required",
+                "EfaSupported": false
+            },
+            "PlacementGroupInfo": {
+                "SupportedStrategies": [
+                    "cluster",
+                    "partition",
+                    "spread"
+                ]
+            },
+            "HibernationSupported": false,
+            "BurstablePerformanceSupported": false,
+            "DedicatedHostsSupported": true,
+            "AutoRecoverySupported": true
+        }
+    ]
+}

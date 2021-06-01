@@ -66,7 +66,7 @@ def get_dataframe(instance_type, product='Linux/UNIX'):
     return df[df['ProductDescription'] == product].drop(columns=['ProductDescription','InstanceType'])
 
 def save_figure(instance, product='Linux/UNIX'):
-    path='/home/luciana/dev/amazon-spot-dataset/dados-aws-15-02-2021/'
+    path='/home/luciana/dev/amazon-spot-dataset/figures/dados-30-maio-2021/'
     df = get_dataframe(instance)
     df1 = df[df['AvailabilityZone'] == 'us-east-1a']
     df2 = df[df['AvailabilityZone'] == 'us-east-1b']
@@ -75,13 +75,21 @@ def save_figure(instance, product='Linux/UNIX'):
     fig, axs = plt.subplots(2, 2, figsize=(15,10))
     axs[0, 0].plot(df1['Timestamp'], df1['SpotPrice'])
     axs[0, 0].set_title('us-east-1a')
+    axs[0, 0].set_xticklabels([])
+    axs[0, 0].set_xticks([])
     axs[0, 1].plot(df2['Timestamp'], df2['SpotPrice'], 'tab:orange')
     axs[0, 1].set_title('us-east-1b')
+    axs[0, 1].set_xticklabels([])
+    axs[0, 1].set_xticks([])
     axs[1, 0].plot(df3['Timestamp'], df3['SpotPrice'], 'tab:green')
     axs[1, 0].set_title('us-east-1c')
+    axs[1, 0].set_xticklabels([])
+    axs[1, 0].set_xticks([])
     axs[1, 1].plot(df4['Timestamp'], df4['SpotPrice'], 'tab:red')
     axs[1, 1].set_title('us-east-1d')
-    fig.savefig(path+'figures/'+instance+'.jpg')
+    axs[1, 1].set_xticklabels([])
+    axs[1, 1].set_xticks([])
+    fig.savefig(instance+'.jpg')
     plt.close()
 
 for instance in instances:

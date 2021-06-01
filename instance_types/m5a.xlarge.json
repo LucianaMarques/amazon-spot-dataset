@@ -1,0 +1,85 @@
+{
+    "InstanceTypes": [
+        {
+            "InstanceType": "m5a.xlarge",
+            "CurrentGeneration": true,
+            "FreeTierEligible": false,
+            "SupportedUsageClasses": [
+                "on-demand",
+                "spot"
+            ],
+            "SupportedRootDeviceTypes": [
+                "ebs"
+            ],
+            "SupportedVirtualizationTypes": [
+                "hvm"
+            ],
+            "BareMetal": false,
+            "Hypervisor": "nitro",
+            "ProcessorInfo": {
+                "SupportedArchitectures": [
+                    "x86_64"
+                ],
+                "SustainedClockSpeedInGhz": 2.5
+            },
+            "VCpuInfo": {
+                "DefaultVCpus": 4,
+                "DefaultCores": 2,
+                "DefaultThreadsPerCore": 2,
+                "ValidCores": [
+                    2
+                ],
+                "ValidThreadsPerCore": [
+                    1,
+                    2
+                ]
+            },
+            "MemoryInfo": {
+                "SizeInMiB": 16384
+            },
+            "InstanceStorageSupported": false,
+            "EbsInfo": {
+                "EbsOptimizedSupport": "default",
+                "EncryptionSupport": "supported",
+                "EbsOptimizedInfo": {
+                    "BaselineBandwidthInMbps": 1085,
+                    "BaselineThroughputInMBps": 135.625,
+                    "BaselineIops": 6000,
+                    "MaximumBandwidthInMbps": 2880,
+                    "MaximumThroughputInMBps": 360.0,
+                    "MaximumIops": 16000
+                },
+                "NvmeSupport": "unsupported"
+            },
+            "NetworkInfo": {
+                "NetworkPerformance": "Up to 10 Gigabit",
+                "MaximumNetworkInterfaces": 4,
+                "MaximumNetworkCards": 1,
+                "DefaultNetworkCardIndex": 0,
+                "NetworkCards": [
+                    {
+                        "NetworkCardIndex": 0,
+                        "NetworkPerformance": "Up to 10 Gigabit",
+                        "MaximumNetworkInterfaces": 4
+                    }
+                ],
+                "Ipv4AddressesPerInterface": 15,
+                "Ipv6AddressesPerInterface": 15,
+                "Ipv6Supported": true,
+                "EnaSupport": "required",
+                "EfaSupported": false
+            },
+            "PlacementGroupInfo": {
+                "SupportedStrategies": [
+                    "cluster",
+                    "partition",
+                    "spread"
+                ]
+            },
+            "HibernationSupported": true,
+            "BurstablePerformanceSupported": false,
+            "DedicatedHostsSupported": false,
+            "AutoRecoverySupported": true
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "InstanceTypes": [
+        {
+            "InstanceType": "t2.small",
+            "CurrentGeneration": true,
+            "FreeTierEligible": false,
+            "SupportedUsageClasses": [
+                "on-demand",
+                "spot"
+            ],
+            "SupportedRootDeviceTypes": [
+                "ebs"
+            ],
+            "SupportedVirtualizationTypes": [
+                "hvm"
+            ],
+            "BareMetal": false,
+            "Hypervisor": "xen",
+            "ProcessorInfo": {
+                "SupportedArchitectures": [
+                    "i386",
+                    "x86_64"
+                ],
+                "SustainedClockSpeedInGhz": 2.5
+            },
+            "VCpuInfo": {
+                "DefaultVCpus": 1
+            },
+            "MemoryInfo": {
+                "SizeInMiB": 2048
+            },
+            "InstanceStorageSupported": false,
+            "EbsInfo": {
+                "EbsOptimizedSupport": "unsupported",
+                "EncryptionSupport": "supported",
+                "NvmeSupport": "unsupported"
+            },
+            "NetworkInfo": {
+                "NetworkPerformance": "Low to Moderate",
+                "MaximumNetworkInterfaces": 3,
+                "MaximumNetworkCards": 1,
+                "DefaultNetworkCardIndex": 0,
+                "NetworkCards": [
+                    {
+                        "NetworkCardIndex": 0,
+                        "NetworkPerformance": "Low to Moderate",
+                        "MaximumNetworkInterfaces": 3
+                    }
+                ],
+                "Ipv4AddressesPerInterface": 4,
+                "Ipv6AddressesPerInterface": 4,
+                "Ipv6Supported": true,
+                "EnaSupport": "unsupported",
+                "EfaSupported": false
+            },
+            "PlacementGroupInfo": {
+                "SupportedStrategies": [
+                    "partition",
+                    "spread"
+                ]
+            },
+            "HibernationSupported": true,
+            "BurstablePerformanceSupported": true,
+            "DedicatedHostsSupported": false,
+            "AutoRecoverySupported": true
+        }
+    ]
+}

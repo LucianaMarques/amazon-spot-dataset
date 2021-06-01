@@ -1,0 +1,99 @@
+{
+    "InstanceTypes": [
+        {
+            "InstanceType": "m5ad.12xlarge",
+            "CurrentGeneration": true,
+            "FreeTierEligible": false,
+            "SupportedUsageClasses": [
+                "on-demand",
+                "spot"
+            ],
+            "SupportedRootDeviceTypes": [
+                "ebs"
+            ],
+            "SupportedVirtualizationTypes": [
+                "hvm"
+            ],
+            "BareMetal": false,
+            "Hypervisor": "nitro",
+            "ProcessorInfo": {
+                "SupportedArchitectures": [
+                    "x86_64"
+                ],
+                "SustainedClockSpeedInGhz": 2.2
+            },
+            "VCpuInfo": {
+                "DefaultVCpus": 48,
+                "DefaultCores": 24,
+                "DefaultThreadsPerCore": 2,
+                "ValidCores": [
+                    6,
+                    12,
+                    18,
+                    24
+                ],
+                "ValidThreadsPerCore": [
+                    1,
+                    2
+                ]
+            },
+            "MemoryInfo": {
+                "SizeInMiB": 196608
+            },
+            "InstanceStorageSupported": true,
+            "InstanceStorageInfo": {
+                "TotalSizeInGB": 1800,
+                "Disks": [
+                    {
+                        "SizeInGB": 900,
+                        "Count": 2,
+                        "Type": "ssd"
+                    }
+                ],
+                "NvmeSupport": "required"
+            },
+            "EbsInfo": {
+                "EbsOptimizedSupport": "default",
+                "EncryptionSupport": "supported",
+                "EbsOptimizedInfo": {
+                    "BaselineBandwidthInMbps": 6780,
+                    "BaselineThroughputInMBps": 847.5,
+                    "BaselineIops": 30000,
+                    "MaximumBandwidthInMbps": 6780,
+                    "MaximumThroughputInMBps": 847.5,
+                    "MaximumIops": 30000
+                },
+                "NvmeSupport": "required"
+            },
+            "NetworkInfo": {
+                "NetworkPerformance": "10 Gigabit",
+                "MaximumNetworkInterfaces": 8,
+                "MaximumNetworkCards": 1,
+                "DefaultNetworkCardIndex": 0,
+                "NetworkCards": [
+                    {
+                        "NetworkCardIndex": 0,
+                        "NetworkPerformance": "10 Gigabit",
+                        "MaximumNetworkInterfaces": 8
+                    }
+                ],
+                "Ipv4AddressesPerInterface": 30,
+                "Ipv6AddressesPerInterface": 30,
+                "Ipv6Supported": true,
+                "EnaSupport": "required",
+                "EfaSupported": false
+            },
+            "PlacementGroupInfo": {
+                "SupportedStrategies": [
+                    "cluster",
+                    "partition",
+                    "spread"
+                ]
+            },
+            "HibernationSupported": false,
+            "BurstablePerformanceSupported": false,
+            "DedicatedHostsSupported": false,
+            "AutoRecoverySupported": false
+        }
+    ]
+}

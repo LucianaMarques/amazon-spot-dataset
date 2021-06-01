@@ -1,0 +1,112 @@
+{
+    "InstanceTypes": [
+        {
+            "InstanceType": "f1.2xlarge",
+            "CurrentGeneration": true,
+            "FreeTierEligible": false,
+            "SupportedUsageClasses": [
+                "on-demand",
+                "spot"
+            ],
+            "SupportedRootDeviceTypes": [
+                "ebs"
+            ],
+            "SupportedVirtualizationTypes": [
+                "hvm"
+            ],
+            "BareMetal": false,
+            "Hypervisor": "xen",
+            "ProcessorInfo": {
+                "SupportedArchitectures": [
+                    "x86_64"
+                ],
+                "SustainedClockSpeedInGhz": 2.3
+            },
+            "VCpuInfo": {
+                "DefaultVCpus": 8,
+                "DefaultCores": 4,
+                "DefaultThreadsPerCore": 2,
+                "ValidCores": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "ValidThreadsPerCore": [
+                    1,
+                    2
+                ]
+            },
+            "MemoryInfo": {
+                "SizeInMiB": 124928
+            },
+            "InstanceStorageSupported": true,
+            "InstanceStorageInfo": {
+                "TotalSizeInGB": 470,
+                "Disks": [
+                    {
+                        "SizeInGB": 470,
+                        "Count": 1,
+                        "Type": "ssd"
+                    }
+                ],
+                "NvmeSupport": "required"
+            },
+            "EbsInfo": {
+                "EbsOptimizedSupport": "default",
+                "EncryptionSupport": "supported",
+                "EbsOptimizedInfo": {
+                    "BaselineBandwidthInMbps": 1700,
+                    "BaselineThroughputInMBps": 212.5,
+                    "BaselineIops": 12000,
+                    "MaximumBandwidthInMbps": 1700,
+                    "MaximumThroughputInMBps": 212.5,
+                    "MaximumIops": 12000
+                },
+                "NvmeSupport": "supported"
+            },
+            "NetworkInfo": {
+                "NetworkPerformance": "Up to 10 Gigabit",
+                "MaximumNetworkInterfaces": 4,
+                "MaximumNetworkCards": 1,
+                "DefaultNetworkCardIndex": 0,
+                "NetworkCards": [
+                    {
+                        "NetworkCardIndex": 0,
+                        "NetworkPerformance": "Up to 10 Gigabit",
+                        "MaximumNetworkInterfaces": 4
+                    }
+                ],
+                "Ipv4AddressesPerInterface": 15,
+                "Ipv6AddressesPerInterface": 15,
+                "Ipv6Supported": true,
+                "EnaSupport": "unsupported",
+                "EfaSupported": false
+            },
+            "FpgaInfo": {
+                "Fpgas": [
+                    {
+                        "Name": "Virtex UltraScale (VU9P)",
+                        "Manufacturer": "Xilinx",
+                        "Count": 1,
+                        "MemoryInfo": {
+                            "SizeInMiB": 65536
+                        }
+                    }
+                ],
+                "TotalFpgaMemoryInMiB": 65536
+            },
+            "PlacementGroupInfo": {
+                "SupportedStrategies": [
+                    "cluster",
+                    "partition",
+                    "spread"
+                ]
+            },
+            "HibernationSupported": false,
+            "BurstablePerformanceSupported": false,
+            "DedicatedHostsSupported": true,
+            "AutoRecoverySupported": false
+        }
+    ]
+}
