@@ -11,4 +11,5 @@ This repository contains scripts to automatically capture data from AWS's spot i
 
 ## Current Data
 
-
+1. You can check previously captured data in the `data/` folder;
+2. Folder `figures/` contain visualizations for data fetched in May 29, 2021.
